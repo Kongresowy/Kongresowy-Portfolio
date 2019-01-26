@@ -142,8 +142,7 @@ class SecondPage extends React.Component {
         const link3 = "https://kongresowy.github.io/Furry-Game-for-CodersLab-2018";
         const link4 = "https://kongresowy.github.io/FLEXBOX-MOBILE-FIRST-PAGE";
         const link5 = "https://kongresowy.github.io/Game-Of-Life-Project";
-        const link6 = "https://kongresowy.github.io/Random-Banner---Little-CSS-SCSS-Training";
-        const text1 = ""
+        const link6 = "https://kongresowy.github.io/TWOM-Board-Game/";
         return (
             <div>
                 <Header activeP={"x"}></Header>
@@ -152,17 +151,17 @@ class SecondPage extends React.Component {
                         <p>Please have a look at my work and feel free to give me your feedback. For specific details, check my GitHub account .</p>
                     </div>
                     <EmptyBox></EmptyBox>
-                    <WorkContent classname={"bcg1"} url={link1} projecttitle={"Visit Card ."} workcontent={"Responsive web design page representing my visit card. Styled by SCSS/CSS with motion functions written in JavaScript (ES6) ."}></WorkContent>
+                    <WorkContent classname={"bcg1"} url={link1} projecttitle={"Visit Card ."} workcontent={"Responsive web design page representing my visit card. Styled by SCSS with motion functions written in JavaScript (ES6) ."}></WorkContent>
                     <EmptyBox></EmptyBox>
-                    <WorkContent classname={"bcg2"} url={link2} projecttitle={"Sit On Chair ."} workcontent={"Simple webpage/template, highly styled by SCSS/CSS. It's made according to the project by PerfectPixel with few working functions for ex. slider (vanilla JavaScript), dropdown in navigation bar, etc ."}></WorkContent>
+                    <WorkContent classname={"bcg6"} url={link6} projecttitle={"Board Game Application ."} workcontent={"Board game application to help navigate the book of scripts. Made in React.js (React Router), styled by SCSS and boundled by WebPack. It uses also internal data base of scripts and render them conditionally ."}></WorkContent>
+                    <EmptyBox></EmptyBox>
+                    <WorkContent classname={"bcg2"} url={link2} projecttitle={"Sit On Chair ."} workcontent={"Simple webpage/template, highly styled by SCSS/CSS. It's made according to the project by PerfectPixel with few working functions for ex. slider (vanilla JavaScript), dropdown in navigation bar, etc. ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                     <WorkContent classname={"bcg3"} url={link3} projecttitle={"Super Mario Furry ."} workcontent={"Game written in JavaScript with few CSS animations. Follow a character to collect coins and avoid outer border ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                     <WorkContent classname={"bcg4"} url={link4} projecttitle={"Verti - RWD/Flexbox ."} workcontent={"Simple full responsive webpage/template (RWD) with few functions, like navigation bar turning into \"hamburger\" shape for mobile screen dimensions. It's made in flexbox method and styled by SCSS/CSS ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                     <WorkContent classname={"bcg5"} url={link5} projecttitle={"Game Of Life ."} workcontent={"Game written in JavaScript, based on a well-known example of a cellular automaton invented in 1970 by British mathematician John Conway ."}></WorkContent>
-                    <EmptyBox></EmptyBox>
-                    <WorkContent classname={"bcg6"} url={link6} projecttitle={"Simple Animated Banner (CSS) ."} workcontent={"A very simple animated banner by CSS ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                 <Footer></Footer>
             </div>
