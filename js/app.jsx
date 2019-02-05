@@ -142,7 +142,7 @@ class SecondPage extends React.Component {
         const link3 = "https://kongresowy.github.io/Furry-Game-for-CodersLab-2018";
         const link4 = "https://kongresowy.github.io/FLEXBOX-MOBILE-FIRST-PAGE";
         const link5 = "https://kongresowy.github.io/Game-Of-Life-Project";
-        const link6 = "https://kongresowy.github.io/TWOM-Board-Game/";
+        const link6 = "https://kongresowy.github.io/Board-Game/";
         return (
             <div>
                 <Header activeP={"x"}></Header>
