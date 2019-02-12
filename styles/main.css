@@ -384,7 +384,7 @@ aside div {
 aside div a {
   height: 7vh;
   width: 9vw;
-  background-color: black;
+  background-color: #0d0d0d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,35 +417,35 @@ aside div:hover a {
 }
 
 aside div:nth-of-type(1) {
-  background-image: url("../images/story1.jpg");
+  background-image: url("../images/visit1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 aside div:nth-of-type(2) {
-  background-image: url("../images/sit1.jpg");
+  background-image: url("../images/story1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 aside div:nth-of-type(3) {
-  background-image: url("../images/mario1.jpg");
+  background-image: url("../images/sit1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 aside div:nth-of-type(4) {
-  background-image: url("../images/verti1.jpg");
+  background-image: url("../images/mario1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 aside div:nth-of-type(5) {
-  background-image: url("../images/life1.jpg");
+  background-image: url("../images/verti1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -494,7 +494,7 @@ main div:nth-of-type(2) a {
           align-items: center;
   font-size: 3em;
   font-weight: 700;
-  background-color: black;
+  background-color: #0d0d0d;
   border-radius: 100px;
   border: 10px solid white;
   text-decoration: none;
@@ -503,7 +503,7 @@ main div:nth-of-type(2) a {
 
 main .main-contentH {
   width: 55vw;
-  background-image: url("../images/visit1.jpg");
+  background-image: url("../images/anotherweather.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -658,7 +658,7 @@ section a div {
           align-items: center;
   font-size: 2.5em;
   font-weight: 700;
-  background-color: black;
+  background-color: #0d0d0d;
   border-radius: 100px;
   border: 10px solid white;
   text-decoration: none;
@@ -794,6 +794,18 @@ section .project-note p {
 }
 
 .bcg6 a:hover div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fade-in 6s linear forwards, pulsate-navlink 0.7s ease-in-out 5s infinite both;
+          animation: fade-in 6s linear forwards, pulsate-navlink 0.7s ease-in-out 5s infinite both;
+}
+
+.bcg7 a {
+  background-image: url("../images/anotherweather.jpg");
+}
+
+.bcg7 a:hover div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -143,6 +143,7 @@ class SecondPage extends React.Component {
         const link4 = "https://kongresowy.github.io/FLEXBOX-MOBILE-FIRST-PAGE";
         const link5 = "https://kongresowy.github.io/Game-Of-Life-Project";
         const link6 = "https://kongresowy.github.io/Board-Game/";
+        const link7 = "https://kongresowy.github.io/Another-Weather-App/";
         return (
             <div>
                 <Header activeP={"x"}></Header>
@@ -151,9 +152,11 @@ class SecondPage extends React.Component {
                         <p>Please have a look at my work and feel free to give me your feedback. For specific details, check my GitHub account .</p>
                     </div>
                     <EmptyBox></EmptyBox>
-                    <WorkContent classname={"bcg1"} url={link1} projecttitle={"Visit Card ."} workcontent={"Responsive web design page representing my visit card. Styled by SCSS with motion functions written in JavaScript (ES6) ."}></WorkContent>
+                    <WorkContent classname={"bcg7"} url={link7} projecttitle={"Another Weather App ."} workcontent={"Fully responsive, simple web application for searching and checking weather conditions over the world. Input proper city and country and \"Get Weather\". Appliciation uses https://openweathermap.org/ API serviced by FETCH and render data conditionally ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                     <WorkContent classname={"bcg6"} url={link6} projecttitle={"Board Game Application ."} workcontent={"Board game application to help navigate the book of scripts. Made in React.js (React Router), styled by SCSS and boundled by WebPack. It uses also internal data base of scripts and render them conditionally ."}></WorkContent>
+                    <EmptyBox></EmptyBox>
+                    <WorkContent classname={"bcg1"} url={link1} projecttitle={"Visit Card ."} workcontent={"Responsive web design page representing my visit card. Styled by SCSS with motion functions written in JavaScript (ES6) ."}></WorkContent>
                     <EmptyBox></EmptyBox>
                     <WorkContent classname={"bcg2"} url={link2} projecttitle={"Sit On Chair ."} workcontent={"Simple webpage/template, highly styled by SCSS/CSS. It's made according to the project by PerfectPixel with few working functions for ex. slider (vanilla JavaScript), dropdown in navigation bar, etc. ."}></WorkContent>
                     <EmptyBox></EmptyBox>
