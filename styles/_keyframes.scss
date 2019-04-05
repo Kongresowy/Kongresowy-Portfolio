@@ -1,0 +1,46 @@
+@keyframes pulsate-navlink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(1em);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes letters-in {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+    letter-spacing: -9px;
+    margin-top: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    letter-spacing: 1px;
+    margin-top: 3vh;
+  }
+}
+
+@keyframes blur-in {
+  0% {
+    filter: blur(2px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
