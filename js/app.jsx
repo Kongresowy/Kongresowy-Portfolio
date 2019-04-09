@@ -4,14 +4,19 @@ import { HashRouter, Route, Link, NavLink, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 class SideBar extends React.Component {
+
+  createAside = () => {
+    let asideElements = [];
+    for (let i = 0; i < 5; i++) {
+      asideElements.push(<div key={i}><Link to="/projects">LEARN MORE .</Link></div>);
+    }
+    return asideElements;
+  }
+
   render() {
     return (
       <aside>
-        <div><Link to="/projects">LEARN MORE .</Link></div>
-        <div><Link to="/projects">LEARN MORE .</Link></div>
-        <div><Link to="/projects">LEARN MORE .</Link></div>
-        <div><Link to="/projects">LEARN MORE .</Link></div>
-        <div><Link to="/projects">LEARN MORE .</Link></div>
+        {this.createAside()}
       </aside>
     );
   }
@@ -128,8 +133,9 @@ class FirstPage extends React.Component {
       <div>
         <Header activeH={"x"}></Header>
         <MainSection bcgClass="main-contentH" title={"Home ."} content={"LEARN MORE ."}></MainSection>
-        <Footer></Footer>
         <SideBar></SideBar>
+        <Footer></Footer>
+        
       </div>
     );
   }
@@ -168,9 +174,9 @@ class SecondPage extends React.Component {
 
 class ThirdPage extends React.Component {
   render() {
-    const contactCont = (
+    const contactContent = (
       <div>
-        <h3>If you like what I do, please let me know .</h3>
+        <h3>If you like my work or you need my services, please contact me .</h3>
         <p>Paweł Sworobowicz .</p>
         <p><a href="mailto:sworobowicz.pawel@gmail.com">sworobowicz.pawel@gmail.com .</a></p>
         <p>+48 733 270 219 .</p>
@@ -179,7 +185,7 @@ class ThirdPage extends React.Component {
     return (
       <div>
         <Header activeC={"x"}></Header>
-        <MainSection bcgClass="main-contentC" title={"Contact ."} contactcontent={contactCont}></MainSection>
+        <MainSection bcgClass="main-contentC" title={"Contact ."} contactcontent={contactContent}></MainSection>
         <Footer></Footer>
       </div>
     );

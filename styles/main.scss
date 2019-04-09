@@ -157,6 +157,24 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px 0px 3px 0px;
+    font-size: 0.7em;
+    a {
+      height: 15vh;
+      width: 20vw;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+      font-weight: 700;
+      background-color: #0d0d0d;
+      border-radius: 100px;
+      border: 10px solid white;
+      text-decoration: none;
+      color: white;
+    }
     &:hover {
       a {
         display: flex;
@@ -228,6 +246,9 @@ section {
   border-bottom: 3px solid white;
   display: flex;
   &:hover {
+    a {
+      animation: blur-in 0.5s ease-in 0.1s forwards;
+    }
     .project-note {
       p {
         animation: letters-in 0.8s ease-in forwards;
@@ -241,7 +262,6 @@ section {
   a {
     height: 100%;
     width: 80vw;
-    border-right: 3px solid white;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -257,6 +277,7 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-left: 5vw;
+    border-left: 3px solid white;
     h3 {
       font-size: 2em;
     }
@@ -280,9 +301,6 @@ section {
   a {
     background-image: url("../images/meteorex1.jpg");
     filter: blur(2px);
-    &:hover {
-      animation: blur-in 0.5s ease-in 0.1s forwards;
-    }
   }
 }
 
@@ -290,9 +308,6 @@ section {
   a {
     background-image: url("../images/mars1.jpg");
     filter: blur(2px);
-    &:hover {
-      animation: blur-in 0.5s ease-in 0.1s forwards;
-    }
   }
 }
 
@@ -300,9 +315,6 @@ section {
   a {
     background-image: url("../images/anotherweather.jpg");
     filter: blur(2px);
-    &:hover {
-      animation: blur-in 0.5s ease-in 0.1s forwards;
-    }
   }
 }
 
@@ -310,9 +322,6 @@ section {
   a {
     background-image: url("../images/story1.jpg");
     filter: blur(2px);
-    &:hover {
-      animation: blur-in 0.5s ease-in 0.1s forwards;
-    }
   }
 }
 
@@ -320,9 +329,6 @@ section {
   a {
     background-image: url("../images/visit1.jpg");
     filter: blur(2px);
-    &:hover {
-      animation: blur-in 0.5s ease-in 0.1s forwards;
-    }
   }
 }
 
@@ -370,13 +376,16 @@ footer {
 
 .page-not-found {
   height: 100vh;
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    text-align: center;
+  }
 }
 
-// transition
+// Transition
 
 .fade-enter {
   opacity: 0;
@@ -398,19 +407,19 @@ footer {
   animation: fade-out 0.5s ease-in;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1600px) {
 
   header {
     div {
       a {
-        font-size: 1.1em;
+        font-size: 1em;
       }
     }
   }
 
   .foot_right {
     p {
-      font-size: 0.8em;
+      font-size: 0.7em;
     }
   }
 
@@ -437,5 +446,271 @@ footer {
       }
     }
   }
+
+}
+
+// Tablet and mobile devices
+
+@media screen and (max-width: 1160px) {
+
+body {
+  width: 100vw;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid whitesmoke;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px 0 20px 0;
+    border-right: none;
+    border-bottom: 2px solid whitesmoke;
+    a {
+      font-size: 35px;
+    }
+  }
+  nav {
+    display: block;
+    width: auto;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+    li {
+      height: auto;
+      font-size: 20px;
+      margin-bottom: 10px;
+      &:hover {
+        animation: none;
+      }
+      a {
+        color: whitesmoke;
+        text-decoration: underline;
+        &:hover {
+          color: whitesmoke;
+          animation: none;
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: auto;
+  height: auto;
+  display: block;
+  div:nth-of-type(1) {
+    display: none;
+  }
+  div:nth-of-type(2) {
+    border: none;
+  }
+  .main-contentH {
+    display: none;
+  }
+  .main-contentC {
+    width: 95vw;
+    height: auto;
+    display: block;
+    padding-left: 0;
+    padding-bottom: 10px;
+    div {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        a {
+          width: auto;
+          height: auto;
+          color: dodgerblue;
+        }
+      }
+    }
+  }
+}
+
+aside {
+  width: 100%;
+  height: auto;
+  position: unset;
+  display: block;
+  border-left: none;
+  z-index: unset;
+  margin-bottom: 20px;
+  div {
+    height: 30vh;
+    width: 95vw;
+    background-size: contain;
+    margin-bottom: 10px;
+    border: none;
+    a {
+      display: block;
+      border: none;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      &:hover {
+        animation: none;
+      }
+    }
+  }
+  div:nth-of-type(1) {
+    background-image: url("../images/meteorex1.jpg");
+  }
+  div:nth-of-type(2) {
+    background-image: url("../images/mars1.jpg");
+  }
+  div:nth-of-type(3) {
+    background-image: url("../images/anotherweather.jpg");
+  }
+  div:nth-of-type(4) {
+    background-image: url("../images/story1.jpg");
+  }
+  div:nth-of-type(5) {
+    background-image: url("../images/visit1.jpg");
+  }
+}
+
+.project-section-title {
+  display: flex;
+  justify-content: unset;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+  height: auto;
+  padding-left: 0;
+  padding-bottom: 20px;
+  border: none;
+  h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  p {
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: unset;
+    letter-spacing: unset;
+  }
+}
+
+section {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  border-top: 2px solid whitesmoke;
+  border-bottom: none;
+  &:hover {
+    a {
+      animation: none;
+    }
+    .project-note {
+      p {
+        animation: none;
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        letter-spacing: unset;
+        line-height: 1.5em;
+      }
+    }
+  }
+  a {
+    height: 30vh;
+    width: 95vw;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .project-note {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    border: none;
+    h3 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    p {
+      display: block;
+      width: 100%;
+      font-size: 13px;
+      letter-spacing: unset;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.bcg1,.bcg2,.bcg3,.bcg4,.bcg5 {
+  a {
+    filter: none;
+  }
+}
+
+.empty-box {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 2px solid whitesmoke;
+  .foot_left {
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border: none;
+    padding: 0;
+  }
+  .foot_right {
+    width: auto;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+    p:nth-of-type(1) {
+      display: none;
+    }
+  }
+}
 
 }
