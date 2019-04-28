@@ -26,12 +26,12 @@ class LinkIcons extends React.Component {
   render() {
     const githubLink = "https://github.com/Kongresowy";
     const linkedInLink = "https://www.linkedin.com/in/pawel-sworobowicz/";
-    const dribbbleLink = "https://dribbble.com/Kongresowy";
+    const behanceLink = "https://www.behance.net/kongresowy";
     return (
       <div className="foot_left">
         <a href={githubLink} target="_blank"></a>
         <a href={linkedInLink} target="_blank"></a>
-        <a href={dribbbleLink} target="_blank"></a>
+        <a href={behanceLink} target="_blank"></a>
       </div>
     );
   }
@@ -155,7 +155,7 @@ class SecondPage extends React.Component {
         <Header activeP={"x"}></Header>
         <div className="project-section-title">
           <h2>Projects .</h2>
-          <p>Please have a look at my work. All projects are public, so for specific details and code review check my GitHub account.<br/>Please check also my <span><a href="https://dribbble.com/Kongresowy" target="_blank">Dribbble</a></span> for UX/UI design projects .</p>
+          <p>Please have a look at my work. All projects are public, so for specific details and code review check my GitHub account.<br/>Please check also my <span><a href="https://www.behance.net/kongresowy" target="_blank">Behance</a></span> for UX/UI design projects .</p>
         </div>
         <EmptyBox></EmptyBox>
         <WorkContent classname={"bcg1"} url={link1} projecttitle={"Meteor Explorer ."} workcontent={"Application made by Create-React-App with usage of NodeJS server deployed on Heroku. It's complex table with sortable columns and other functions. Application uses MongoDB Atlas database about meteorites and their features. Feel free to play with app - you can add new meteorites and also delete chosen ones ."}></WorkContent>
